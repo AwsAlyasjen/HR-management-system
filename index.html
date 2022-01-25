@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR-management-system</title>
-    <link rel="stylesheet" href="css/index.css">
-    
-</head>
-<body>
-   
-    <header class="site-header">
-        <div class="site-identity">
-          <a href="#"><img src="assets/hrLogo.png" alt="logo" /></a>
-        </div>  
-        <nav class="site-navigation">
-          <ul class="nav">
-            <li><span><a href="index.html">Home</a></span></li>
-            <li><span><a href="accounting.html">About</a></span></li> 
-          </ul>
-        </nav>
-      </header>
-    <main>        
-      <script src="app.js"></script>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <p> &copy; Copyright 2022 by Javascript Class</p>
-            <li><span><a href="accounting.html">Terms and privacy</a></span></li>
-            <li><span><a href="accounting.html">Facebook</a></span></li>
-            <li><span><a href="accounting.html">LinkedIn</a></span></li>
-        </div>  
-       
-    </footer>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR-management-system</title>
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-identity">
+      <a href="#"><img src="assets/hrLogo.png" alt="logo" /></a>
+    </div>
+    <nav class="site-navigation">
+      <ul class="nav">
+        <li><span><a href="index.html">Home</a></span></li>
+        <li><span><a href="accounting.html">About</a></span></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="form">
+      <label for="fullName">Full name</label>
+      <input id="fullName" type="text" name="fullName" required>
+      <br>
+      <label for="department">Department:</label>
+      <select id="department" name="department">
+        <option value="administration">Administration</option>
+        <option value="marketing">Marketing</option>
+        <option value="development">Development</option>
+        <option value="finance">Finance</option>
+      </select>
+      <br>
+      <label for="level">Level</label>
+      <select id="level" name="level">
+        <option value="junior">Junior</option>
+        <option value="midSenior">Mid-Senior</option>
+        <option value="senior">Senior</option>
+      </select>
+      <br>
+            <label for="images">images: </label>
+            <input id="images" type="text" name="images">
+            
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <div  class="flex-container" id="information">
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p> &copy; Copyright 2022 by Javascript Class</p>
+      <li><span><a href="accounting.html">Terms and privacy</a></span></li>
+      <li><span><a href="accounting.html">Facebook</a></span></li>
+      <li><span><a href="accounting.html">LinkedIn</a></span></li>
+    </div>
+
+  </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>
