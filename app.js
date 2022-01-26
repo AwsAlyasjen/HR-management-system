@@ -2,6 +2,11 @@
 let allEmployyes = [];
 let from = document.getElementById("from");
 let card = document.getElementById("information");
+let card2 = document.getElementById("information2");
+let card3 = document.getElementById("information3");
+let card4 = document.getElementById("information4");
+let card5 = document.getElementById("information5");
+
 
 function employeeDetals(employeeID, fullName, department,
     level, salary, image,uniqueId) {
@@ -52,26 +57,53 @@ employeeDetals.prototype.render = function () {
     image.setAttribute("src", this.imageURL);
     card.appendChild(image);
 
-    let heading = document.createElement('h4');
+    /*let heading = document.createElement('article');
     heading.textContent = this.name;
-    card.appendChild(heading);
+    card.appendChild(heading);*/
+     let section =document.createElement("article");
+    card2.appendChild(section);
+    let paragh1=document.createElement("p");
+    paragh1.textContent=this.name;
+    card2.appendChild(paragh1);
 
-    var departmentEmp=document.createElement('h4');
+    let section2 =document.createElement("article");
+    card3.appendChild(section2);
+    let paragh2=document.createElement("p");
+    paragh2.textContent=this.department;
+    card3.appendChild(paragh2);
+
+   /* var departmentEmp=document.createElement('h4');
     departmentEmp.textContent=this.department;
-    card.appendChild(departmentEmp);
+    card.appendChild(departmentEmp);*/
+   /* let section3 =document.createElement("article");
+    card.appendChild(section3);
+    let paragh3=document.createElement("p");
+    paragh3.textContent=this.id;
+    card.appendChild(paragh3);*/
 
-    let div = document.createElement('h4');
+    /*let div = document.createElement('h4');
     div.textContent = this.id;
-    card.appendChild(div);
+    card.appendChild(div);*/
+    let section4 =document.createElement("article");
+    card4.appendChild(section4);
+    let paragh4=document.createElement("h4");
+    paragh4.textContent=this.level;
+    card4.appendChild(paragh4);
 
-    let ul = document.createElement('ul');
+    /*let ul = document.createElement('ul');
     card.appendChild(ul); 
     let list = document.createElement('li');
     ul.appendChild(list);
-    list.textContent = this.level;
-    var uniqueNumber=document.createElement('h6');
+    list.textContent = this.level;*/
+    let section5 =document.createElement("article");
+    card5.appendChild(section5);
+    let paragh5=document.createElement("h4");
+    paragh5.textContent=(this.id+" ("+this.uniqueId+")");
+    card5.appendChild(paragh5);
+    
+   /* var uniqueNumber=document.createElement('h6');
     uniqueNumber.textContent=this.uniqueId;
-    card.appendChild(uniqueNumber);
+    card.appendChild(uniqueNumber);*/
 
 }
 function renderAll() {
