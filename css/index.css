@@ -10,6 +10,7 @@ body {
     border-bottom: 1px solid #ccc;
     padding: .5em 1em;
     background-color: gray;
+    margin-right: 0px;
   }
   
   .site-header::after {
@@ -50,13 +51,6 @@ body {
     display: inline-block;
     margin: 1.4em 9em 1em 1em;
   }
-  * {
-    box-sizing: border-box;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
   
   footer{
     margin-bottom: 0cm;
@@ -78,13 +72,14 @@ body {
   display: flex;
   justify-content: space-between;
   flex: 0 1 24%;
-  /*background-color: DodgerBlue;
+  /*background-color: DodgerBlue;*/
   margin-top: 50px;
-  margin-right: 1000px;
+  margin-right: 0px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius:  5px 5px 0 0;
-  padding: 2px 16px;*/
+  padding: 2px 16px;
+  background-color: aqua;
 }
 .flex-container1 {
   display: flex;

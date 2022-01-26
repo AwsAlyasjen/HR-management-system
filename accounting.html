@@ -22,7 +22,34 @@
         </nav>
       </header>
     <main>        
-       
+      <h1>User Detail Page</h1>
+      <div id="result-table">
+              <table>
+                  <tr>
+                      <th>name</td>
+                      <th>debartmint</td>
+                      <th>level</th>
+                      <th>salary</td>
+                  </tr>
+                  <tr>
+                      <td id="first"></td>
+                      <td id="second"></td>
+                      <td id="third"></td>
+                      <td id="fourth"></td>
+                  </tr>
+              </table>
+              <br>
+          </div>
+
+      <script>
+          window.onload = function() {
+              document.getElementById('first').innerText = localStorage.getItem('name');
+              document.getElementById('second').innerText = localStorage.getItem('department');
+              document.getElementById('third').innerText = localStorage.getItem('level');
+              document.getElementById('fourth').innerText = localStorage.getItem('salary');
+
+          };
+      </script>
     </main>
 
     <footer>
